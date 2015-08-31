@@ -1,0 +1,55 @@
+<!--Jake Wood   8/28/15
+    Visual Thesaurus Project: enjoy!
+    uses Javascript, D3, Html, CSS, & Json 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <style type="text/css">
+  
+  .node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+  
+  .link {
+    stroke: #999;
+    stroke-opacity: .6;
+  }
+  
+  .node text {
+    font: 15px sans-serif;
+    stroke: #000;
+    stroke-width: 1px;
+    pointer-events: none;
+  }
+  
+  textarea.inputTextArea{
+    resize:none;
+    height: 100px;
+    width: 99%;
+  }
+  
+  </style>
+  <script src="d3.min.js" charset="utf-8" type="text/javascript"></script>
+  <script src="visual thesaurus force layout.js" charset="utf-8" type="text/javascript"></script>
+  <title>A Jake Wood Project</title>
+  <h1 style="Background-color:#E8E8E8; text-align: left">
+    VISUAL THESAURUS
+  </h1>
+  <h3 style="text-align: left">by Jake Wood</h3>
+  <div>
+    <input type="text" id="myText" value="clever" style="font: 20px sans-serif" onkeyup="displayDefinition()" onkeydown="enterMain()">
+    <button onclick="main()" style="font: 20px sans-serif">Enter</button>
+  </div>
+  <body onLoad="main()">
+    <div id="body">
+      <textarea id="definition" class="inputTextArea" readOnly = "true" style="border: 1px solid #000; font: 20px sans-serif; float:left;">Welcome to Visual Thesaurus!
+        Enter a word you'd like to see synonyms for and click enter!
+                You can click any node to get its definition,
+                        or double-click a node to see if closer synonyms exist!      
+      </textarea>
+    </div>
+  </body>
+</html>
