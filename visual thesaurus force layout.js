@@ -141,6 +141,15 @@ function enterMain(){
   if (event.keyCode == 13){main();}
 }
 
+var synonymHeadList = ["abase","abash","abate","alleviate","abbreviation","abridgment","abet","abhor","abide","abolish","exterminate","abomination","abridgment","abbreviation","absolute","absolve","pardon","absorb","abstinence","abstracted","absurd","abuse","accessory","accident","acquaintance","acrimony","active","acumen","add","addicted","adequate","adherent","adhesive"];
+var headListLength = synonymHeadList.length;
+//updates synonym diagram with random central node
+function getRandom() {
+    //assigns entered text area to a random head
+    document.getElementById("myText").value = synonymHeadList[Math.floor(Math.random() * headListLength)];
+    main();
+}
+
 //defines endsWith fxn, returns boolean
 String.prototype.endsWith = function(str) 
 {return (this.match(str+"$")==str);}
