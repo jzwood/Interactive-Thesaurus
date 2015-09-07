@@ -174,3 +174,9 @@ function displayDefinition(){
     document.getElementById('definition').value = word;
   }
 }
+
+//show information about project
+function about() {
+    var info = "Visual Thesaurus (8/15).\nThis project was made possible by the availability of resources from Project Gutenberg. The thesaurus used to produce the interactive force-diagram comes from \"Project Gutenberg's English Synonyms and Antonyms, by James Champlin Fernald.\" The definitions, on the other hand, were originally taken from \"The Project Gutenberg EBook of Webster's Unabridged Dictionary, by Various\". The most difficult part of this project involved converting these resources into file types intelligible to the D3 library. This was done via python scripts which generated JSON files from the plain text documents. ~Jake Wood";
+    document.getElementById('definition').value = info;
+}
