@@ -8,12 +8,16 @@ This project could have been an exercise in dictionary APIs; however, at the inc
 
 ### acknowldgement ###
 
-The thesaurus used to produce the interactive force-diagram comes from _Project Gutenberg's English Synonyms and Antonyms_, by James Champlin Fernald. The definitions were originally taken from _The Project Gutenberg EBook of Webster's Unabridged Dictionary_, by Various.
+The thesaurus used for the interactive force-diagram comes from _Project Gutenberg's English Synonyms and Antonyms_, by James Champlin Fernald and the definitions were taken from _The Project Gutenberg EBook of Webster's Unabridged Dictionary_, by Various.
 
 ### local usage ###
 
-In the command line interface native to your device, type:
+In the command line interface native to your device, first copy repo:
 
-`git clone https://github.com/jzwood/Interactive-Thesaurus.git;cd Interactive-Thesaurus;python -m SimpleHTTPServer 8000`
+`git clone https://github.com/jzwood/Interactive-Thesaurus.git;cd Interactive-Thesaurus`
+
+then server it locally.
+
+`python -m SimpleHTTPServer 8000`
 
 Now navigate to `http://localhost:8000/` in your broswer.
